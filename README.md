@@ -1,3 +1,4 @@
+<img width="800" height="800" alt="ma-photo jpg" src="https://github.com/user-attachments/assets/78fdab95-0c36-466f-ab8a-8ed0db6fdfb2" />
 <!DOCTYPE html>
 <html lang="fr">
 <head>
