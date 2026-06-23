@@ -1,45 +1,57 @@
-# martinleruen-dot-Martin-Le-Ruen
-Rattrapage du cours Développement Front-End 1293 - Page de profil et Landing Page.
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Mon Profil - Martin Le Ruen</title>
-  <meta name="description" content="Page de profil de Martin Le Ruen pour le cours Développement Front-End.">
+  <title>Martin Le Ruen - Profile</title>
+  <meta name="description" content="Page de profil de Martin Le Ruen. Étudiant à l'IÉSEG et professionnel du marketing digital.">
   
+  <!-- Importation de Font Awesome pour des icônes au rendu impeccable -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   
+  <!-- Lien vers la feuille de style externe -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+  <!-- Le container centralise et cadre l'ensemble de la page -->
   <div class="container">
     
+    <!-- Carte 1 : Identité & Présentation -->
     <div class="card-white">
       <h1>Hello, I'm Martin 😎</h1>
-      <img src="ma-photo.jpg" alt="Photo de Martin Le Ruen" class="img-circle">
+      <!-- Remplace "ma-photo.jpg" par le nom de ton fichier image réel dans ton dépôt -->
+      <img src="ma-photo.jpg" alt="Martin Le Ruen" class="img-circle">
       <p>
-        Étudiant en Master à l'IÉSEG et alternant en e-commerce chez Lacoste, 
-        j'adore découvrir le développement web et apprendre à coder avec Le Wagon !
+        Actuellement étudiant en Master à l'IÉSEG School of Management, j'évolue dans le secteur du marketing digital et du business development. Passionné par la tech, j'apprends le développement web pour maîtriser les leviers techniques de l'animation e-commerce et optimiser l'expérience utilisateur !
       </p>
       <a href="https://www.lewagon.com" target="_blank" class="btn-purple">Discover Le Wagon</a>
     </div>
 
+    <!-- Carte 2 : Expérience Professionnelle -->
     <div class="card-white">
-      <h2>UX/UI & E-commerce 📐</h2>
-      <p>I am passionate about UX/UI Design and digital merchandising.</p>
+      <h2>E-commerce & Digital Marketing 🚀</h2>
+      <p>
+        Au sein des équipes e-commerce chez Lacoste, je participe activement à la gestion du catalogue en ligne, à l'optimisation des pages de listes de produits (PLP) et au déploiement des campagnes d'animation commerciale sur les différents marchés.
+      </p>
     </div>
 
+    <!-- Carte 3 : Projet Majeur / Recherche -->
     <div class="card-white">
-      <h2>Frontend Development 💻</h2>
-      <p>I am passionate about Frontend Development and building clean web pages.</p>
+      <h2>Master's Thesis & Research 📚</h2>
+      <p>
+        J'ai récemment mené un travail de recherche approfondi appliqué au cas de Lacoste, analysant comment adapter l'animation e-commerce aux spécificités des marchés européens tout en garantissant une image de marque cohérente. Cette étude s'appuie sur une méthodologie qualitative rigoureuse comprenant 20 entretiens approfondis.
+      </p>
     </div>
 
+    <!-- Carte 4 : Passions & Sports -->
     <div class="card-white">
-      <h2>Sports & Running 🏃‍♂️</h2>
-      <p>I am passionate about tennis and training for 10km running races.</p>
+      <h2>Sports & Hobbies 🏃‍♂️🎾</h2>
+      <p>
+        Grand passionné de tennis, je suis de très près l'actualité des grands tournois du Grand Chelem comme Roland-Garros et Wimbledon. Côté terrain, j'aime le dépassement de soi et je m'entraîne régulièrement pour des courses à pied de 10km.
+      </p>
     </div>
 
+    <!-- Carte 5 : Liens et Réseaux Sociaux -->
     <div class="card-white">
       <h2>Follow me</h2>
       <ul class="list-vertical">
@@ -53,11 +65,6 @@ Rattrapage du cours Développement Front-End 1293 - Page de profil et Landing Pa
             <i class="fab fa-linkedin-in"></i> LinkedIn
           </a>
         </li>
-        <li>
-          <a href="https://twitter.com/" target="_blank">
-            <i class="fab fa-twitter"></i> Twitter
-          </a>
-        </li>
       </ul>
     </div>
 
@@ -65,104 +72,110 @@ Rattrapage du cours Développement Front-End 1293 - Page de profil et Landing Pa
 
 </body>
 </html>
-/* --- 1. DESIGN GLOBAL & DESIGN DU BODY --- */
+/* --- 1. PARAMÈTRES GÉNÉRAUX DU SITE --- */
 body {
-  background-color: #F3F4F6; /* Fond gris clair comme sur le modèle */
-  color: rgb(30, 30, 30);
+  background-color: #F4F6F9; /* Un gris-bleu très doux et moderne pour le fond */
+  color: rgb(45, 45, 45);    /* Un texte sombre mais moins agressif que le noir pur */
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 16px;
+  line-height: 1.7;          /* Espacement de ligne confortable pour la lecture */
   margin: 0;
   padding: 0;
 }
 
-/* --- 2. TYPOGRAPHIE DES TITRES & TEXTES --- */
+/* --- 2. TYPOGRAPHIE & TITRES --- */
 h1 {
-  font-size: 32px;
-  font-weight: bold;
-  color: #111;
+  font-size: 34px;
+  font-weight: 700;
+  color: #111111;
+  margin-top: 10px;
   margin-bottom: 20px;
 }
 
 h2 {
-  font-size: 20px;
-  font-weight: bold;
-  color: #222;
-  margin-bottom: 10px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #1A1A1A;
+  margin-bottom: 12px;
 }
 
 p {
-  color: rgb(100, 100, 100);
-  margin-bottom: 20px;
-  font-weight: 300;
+  color: rgb(90, 90, 90);
+  font-size: 15.5px;
+  font-weight: 400;
+  margin-bottom: 25px;
 }
 
-/* --- 3. STRUCTURE DES DIVS (CONTAINER & CARDS) --- */
+/* --- 3. ALIGNEMENT ET BLOCS (CONTAINER & CARDS) --- */
 .container {
-  width: 550px;       /* Largeur idéale pour le rendu de profil centré */
-  margin: 40px auto;  /* Centre automatiquement le bloc sur la page */
+  width: 600px;        /* Largeur idéale pour une lecture fluide sur ordinateur */
+  margin: 50px auto;   /* Centre parfaitement le bloc verticalement et horizontalement */
+  padding: 0 15px;     /* Sécurité pour les petits écrans */
 }
 
 .card-white {
-  background: white;
+  background: #FFFFFF;
   padding: 40px;
-  border-radius: 4px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08); /* Ombre légère et élégante */
-  margin-bottom: 20px;
-  text-align: center; /* Aligne TOUT le contenu au centre de la carte */
+  border-radius: 8px;  /* Angles légèrement plus arrondis pour un look moderne */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); /* Ombre très douce et diffuse */
+  margin-bottom: 25px;
+  text-align: center;  /* Centre l'intégralité des éléments à l'intérieur de la carte */
 }
 
-/* --- 4. DESIGN DES ÉLÉMENTS (AVATAR & BOUTON) --- */
+/* --- 4. STYLE DES COMPOSANTS (AVATAR & BOUTON VIOLET) --- */
 .img-circle {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;   /* Arrondit parfaitement l'image en cercle */
-  object-fit: cover;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;   /* Forme un cercle parfait */
+  object-fit: cover;    /* Empêche la déformation de la photo */
   margin-bottom: 15px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
 .btn-purple {
   display: inline-block;
-  background-color: #5D5FEF; /* Couleur violette identique au bouton du Wagon */
-  color: white;
-  padding: 12px 24px;
-  border-radius: 4px;
-  font-weight: bold;
+  background-color: #5D5FEF; /* Le violet emblématique de l'exercice */
+  color: #FFFFFF;
+  padding: 14px 28px;
+  border-radius: 6px;
+  font-weight: 600;
   text-decoration: none;
-  transition: background-color 0.3s ease;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease; /* Transition animée pour le survol */
 }
 
 .btn-purple:hover {
-  background-color: #4B4DDC;
-  color: white;
+  background-color: #4B4DDC; /* Teinte plus intense au survol */
+  color: #FFFFFF;
   text-decoration: none;
+  transform: translateY(-1px); /* Léger effet de surélévation dynamique */
 }
 
-/* --- 5. DESIGN DE LA LISTE DE RÉSEAUX (VERTICALE) --- */
+/* --- 5. STYLE DE LA LISTE VERTICALE DES RÉSEAUX --- */
 .list-vertical {
-  list-style: none; /* Enlève les puces d'origine */
-  padding-left: 0px; 
+  list-style: none; /* Nettoie les puces par défaut */
+  padding-left: 0;
   margin: 20px 0 0 0;
 }
 
 .list-vertical li {
-  margin: 12px 0; /* Espace vertical entre chaque réseau */
+  margin: 14px 0; /* Espacement vertical aéré entre les réseaux */
 }
 
 .list-vertical a {
   color: #5D5FEF;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 500;
-  transition: color 0.3s ease;
+  transition: color 0.2s ease;
 }
 
 .list-vertical a:hover {
   color: #4B4DDC;
-  text-decoration: underline;
+  text-decoration: underline; /* Souligné élégant au survol */
 }
 
-/* Espacement pour les icônes à l'intérieur des liens */
 .list-vertical i {
-  margin-right: 8px;
-  font-size: 18px;
+  margin-right: 10px; /* Espace précis entre le logo du réseau et son texte */
+  font-size: 19px;
 }
