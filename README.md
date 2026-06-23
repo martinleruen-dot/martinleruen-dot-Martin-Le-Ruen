@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Martin Le Ruen - Profile</title>
-  <img width="800" height="800" alt="ma-photo jpg" src="https://github.com/user-attachments/assets/269e9380-d469-4da5-bb8c-1c189ad5dd69" />
+![Uploading ma-photo.jpg.png…]()
   <meta name="description" content="Page de profil de Martin Le Ruen. Étudiant à l'IÉSEG et professionnel du marketing digital.">
   
   <!-- Importation de Font Awesome pour des icônes au rendu impeccable -->
