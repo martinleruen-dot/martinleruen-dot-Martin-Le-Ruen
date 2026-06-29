@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <title>Martin Le Ruen - Profile</title>
-  [Uploading ma-photo.jpg -->
   <meta name="description" content="Page de profil de Martin Le Ruen. Étudiant à l'IÉSEG et professionnel du marketing digital.">
   
   <!-- Importation de Font Awesome pour des icônes au rendu impeccable -->
